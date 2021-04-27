@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
           gyroControls: false,
           minHeight: 200.0,
           minWidth: 200.0,
-          color: 0x8e8e8e,
+          color: 0x7f0931,
           backgroundColor: 0x211e2a,
           scale: 1.0,
           scaleMobile: 1.0,
