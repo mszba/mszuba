@@ -21,7 +21,7 @@
 }
 
 .title {
-  font-size: 5.5rem;
+  font-size: 6.5rem;
   color: #fff;
   margin: 20px 0 20px 0;
 }
@@ -45,6 +45,13 @@ flex-direction: column;
 .listElement{
 font-size: 30px;
 color: #fff;
+
+}
+
+.listElement:hover {
+  color: rgb(142, 141, 146);
+  transform: translateX(10px);
+  transition: transform .3s ease, color .4s ease;
 }
 
 .externalList{
@@ -60,37 +67,43 @@ color: #fff;
 
 
 .singleLetter {
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all .2s;
   display: inline-block;
   color: #fff;
-  font-family: Audiowide;
-  text-decoration: none;
 }
 
 .pictureDot{
-  display: block;
+  display: inline-block;
   width: 20px;
   height: 20px;
   background: #fff;
   border-radius: 50%;
 }
 
-.singleLetter:hover {
-  color: #b80f0a;
+.frontendText{
+  /* color: rgba(113,111,119); */
+  color: rgb(142, 141, 146);
+}
 
-  -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon5 1.5s ease-in-out infinite alternate;
-  animation: neon5 1.5s ease-in-out infinite alternate;
+.frontendText:hover,
+.singleLetter:hover ~ .frontendText {
+  mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  mask-size: 200%;
+  animation: shine 1.5s infinite;
+}
+
+.frontendText {
+display: flex;
+font-size: 2rem;
 }
 
 
-@keyframes neon5 {
+
+@keyframes shine {
   from {
-    text-shadow: 0 0 10px #b80f0a, 0 0 20px #b80f0a, 0 0 30px #b80f0a, 0 0 40px #b80f0a, 0 0 70px #b80f0a, 0 0 80px #b80f0a, 0 0 100px #b80f0a, 0 0 150px #b80f0a;
+    mask-position: 150%;
   }
+  
   to {
-    text-shadow: 0 0 5px #b80f0a, 0 0 10px #b80f0a, 0 0 15px #b80f0a, 0 0 20px #b80f0a, 0 0 35px #b80f0a, 0 0 40px #b80f0a, 0 0 50px #b80f0a, 0 0 75px #b80f0a;
+    mask-position: -50%;
   }
 }
