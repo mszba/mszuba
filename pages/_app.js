@@ -17,8 +17,7 @@ function MyApp({ Component, pageProps }) {
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
-          minHeight: 200.0,
-          minWidth: 200.0,
+
           color: 0x7f0931,
           backgroundColor: 0x211e2a,
           scale: 1.0,
