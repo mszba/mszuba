@@ -1,0 +1,24 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 2vw 4vw;
+  }
+  
+.backButton{
+  position: absolute;
+  left: 4vw;
+  top: 2vw;
+  border: 0;
+  background: transparent;
+  font-size: 3rem;
+  }
+  
+.wrapper{
+  width: 100%;
+  height: 100%;
+  /* max-width: 800px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
