@@ -11,36 +11,6 @@ const HomePage = () => {
       <div className={styles.wrapper}>
         <header className={styles.header}>
           <motion.h1 className={styles.title} layoutId='homeTitle'>
-            {/* <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              H
-            </motion.span>
-            <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              e
-            </motion.span>
-            <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              l
-            </motion.span>
-            <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              l
-            </motion.span>
-            <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              o
-            </motion.span>
-            <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              ,
-            </motion.span> */}
             {helloArray.map((letter, i) => (
               <motion.span
                 key={i}
@@ -88,98 +58,14 @@ const HomePage = () => {
             </motion.span>
             <motion.span
               whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              ,
-            </motion.span>
-            <br />
-            <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              F
-            </motion.span>
-            <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              r
-            </motion.span>
-            <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              o
-            </motion.span>
-            <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              n
-            </motion.span>
-            <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              t
-            </motion.span>
-            <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              e
-            </motion.span>
-            <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              n
-            </motion.span>
-            <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              d
-            </motion.span>{' '}
-            <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              D
-            </motion.span>
-            <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              e
-            </motion.span>
-            <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              v
-            </motion.span>
-            <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              e
-            </motion.span>
-            <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              l
-            </motion.span>
-            <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              o
-            </motion.span>
-            <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              p
-            </motion.span>
-            <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              e
-            </motion.span>
-            <motion.span
-              whileHover={{ scale: 1.2 }}
-              className={styles.singleLetter}>
-              r
-            </motion.span>
-            <motion.span
               className={styles.pictureDot}
               layoutId='picture'></motion.span>
+            <br />
+            <motion.span
+              // whileHover={{ scale: 1.2 }}
+              className={styles.frontendText}>
+              Frontend Developer
+            </motion.span>
           </motion.h1>
         </header>
         <nav className={styles.nav}>
@@ -190,15 +76,15 @@ const HomePage = () => {
               </Link>
             </motion.li>
             <li className={styles.listElement}>
-              <Link href='/aboutme'>
+              <Link href='/my-projects'>
                 <a>Technologies</a>
               </Link>
             </li>
-            <li className={styles.listElement}>
-              <Link href='/aboutme'>
-                <a>Projects</a>
+            <motion.li className={styles.listElement} layoutId='projectsTitle'>
+              <Link href='/my-projects'>
+                <a>My projects</a>
               </Link>
-            </li>
+            </motion.li>
             <li className={styles.listElement}>
               <Link href='/aboutme'>
                 <a>Contact me</a>
