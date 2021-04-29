@@ -75,11 +75,13 @@ const HomePage = () => {
                 <a>About me</a>
               </Link>
             </motion.li>
-            <li className={styles.listElement}>
-              <Link href='/my-projects'>
+            <motion.li
+              className={styles.listElement}
+              layoutId='technologiesTitle'>
+              <Link href='/technologies'>
                 <a>Technologies</a>
               </Link>
-            </li>
+            </motion.li>
             <motion.li className={styles.listElement} layoutId='projectsTitle'>
               <Link href='/my-projects'>
                 <a>My projects</a>
