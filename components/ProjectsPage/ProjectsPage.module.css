@@ -1,10 +1,3 @@
-.container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 2vw 4vw;
-  }
-
   .header {
     width: 100%;
     display: flex;
@@ -27,11 +20,11 @@
   }
 
 .main {
-  margin-top: 70px;
+  padding-top: 70px;
   max-width: 800px;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+
 }  
 
 /* project element styles */
@@ -72,4 +65,11 @@ margin-right: 25px;
 width: 350px;
 height: 350px;
 background: #fff;
+}
+
+@media screen and (max-width:970px) {
+  .projectElement{
+    flex-direction: column;
+    }
+  
 }
