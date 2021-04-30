@@ -3,11 +3,20 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import styles from './HomePage.module.css';
 
+import { technologiesData } from '../TechnologiesPage/technologiesData';
+
 const helloArray = ['H', 'e', 'l', 'l', 'o', ','];
 
 const HomePage = () => {
   return (
     <div className={styles.container}>
+      {technologiesData.map((technology, i) => (
+        <motion.div
+          key={i}
+          layoutId={technology.layoutId}
+          className={`${technology.className} ${styles.element}`}></motion.div>
+      ))}
+
       <div className={styles.wrapper}>
         <header className={styles.header}>
           <motion.h1 className={styles.title} layoutId='homeTitle'>
@@ -87,11 +96,11 @@ const HomePage = () => {
                 <a>My projects</a>
               </Link>
             </motion.li>
-            <li className={styles.listElement}>
-              <Link href='/aboutme'>
+            <motion.li className={styles.listElement} layoutId='contactTitle'>
+              <Link href='/contact-me'>
                 <a>Contact me</a>
               </Link>
-            </li>
+            </motion.li>
           </ul>
           <ul className={styles.externalList}>
             <li className={styles.externalElement}>GitHub</li>
