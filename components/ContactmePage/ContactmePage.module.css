@@ -1,0 +1,91 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.subTitleText {
+  max-width: 600px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.main {
+  padding-top: 30px;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #00000065;
+  padding: 30px;
+
+  /* border-radius: 20px; */
+}
+
+.nameEmailInput,
+.subjectInput,
+.messageInput {
+  background: #211e2a;
+  border: none;
+  /* border-radius: 5px; */
+  outline: none;
+  color: #8d8d8d;
+}
+
+.nameEmailInput::placeholder,
+.subjectInput::placeholder,
+.messageInput::placeholder {
+  color: #8d8d8d;
+  font-size: 16px;
+}
+
+.nameEmailWrap {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.nameEmailInput {
+  width: 49%;
+  height: 50px;
+  padding: 0 20px;
+}
+.subjectInput {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+}
+.messageInput {
+  width: 100%;
+  max-width: 100%;
+  min-height: 180px;
+  padding: 20px;
+}
+.buttonWrap {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.formButton {
+  padding: 15px 30px;
+  background: #358342;
+  border: 0;
+}
