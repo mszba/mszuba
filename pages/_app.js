@@ -22,8 +22,8 @@ function MyApp({ Component, pageProps }) {
           backgroundColor: 0x211e2a,
           // color: 0x3fe8ff,
           // backgroundColor: 0xf2a52,
-          scale: 1.0,
-          scaleMobile: 1.0,
+          scale: 1,
+          scaleMobile: 1,
         })
       );
     }
@@ -48,13 +48,7 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <div
-      ref={vantaRef}
-      style={{
-        width: '100%',
-        minHeight: '100vh',
-        backgroundColor: 'rgba(33,30,42)',
-      }}>
+    <div ref={vantaRef} className='vanta-container'>
       <AnimateSharedLayout>
         <Component {...pageProps} />
       </AnimateSharedLayout>
