@@ -2,6 +2,8 @@ import SubpageLayout from '../../layouts/SubpageLayout';
 import { motion } from 'framer-motion';
 import styles from './TechnologiesPage.module.css';
 
+import { technologiesData } from './technologiesData';
+
 const TechnologiesPage = () => {
   return (
     <SubpageLayout>
@@ -14,7 +16,14 @@ const TechnologiesPage = () => {
           obcaecati autem consequuntur odit nostrum nemo quo at libero.
         </h2>
       </header>
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        {technologiesData.map((technology, i) => (
+          <motion.div
+            key={i}
+            layoutId={technology.layoutId}
+            className={styles.element}></motion.div>
+        ))}
+      </main>
     </SubpageLayout>
   );
 };
