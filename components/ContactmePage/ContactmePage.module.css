@@ -25,26 +25,44 @@
   max-width: 800px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .form {
+  padding: 30px;
   width: 100%;
+  min-height: 435px;
   display: flex;
   flex-direction: column;
-  background: #00000065;
-  padding: 30px;
-
-  /* border-radius: 20px; */
+  align-items: center;
+  justify-content: center;
+  background: #00000070;
+  border-radius: 20px;
+  transition: all 0.5s ease;
 }
 
 .nameEmailInput,
 .subjectInput,
 .messageInput {
-  background: #211e2a;
-  border: none;
-  /* border-radius: 5px; */
-  outline: none;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #8d8d8d;
   color: #8d8d8d;
+  font-size: 16px;
+  transition: all 0.4s ease;
+}
+
+.messageInput {
+  font-family: inherit;
+}
+
+.nameEmailInput:focus,
+.subjectInput:focus,
+.messageInput:focus {
+  /* border-color: #7f0931;
+  color: #7f0931; */
+  border-color: #7f0931;
+  outline: #000;
 }
 
 .nameEmailInput::placeholder,
@@ -60,11 +78,26 @@
   display: flex;
   justify-content: space-between;
 }
+
 .nameEmailInput {
   width: 49%;
   height: 50px;
   padding: 0 20px;
 }
+
+@media screen and (max-width: 480px) {
+  .nameEmailWrap {
+    flex-direction: column;
+  }
+
+  .nameEmailInput {
+    width: 100%;
+  }
+  .nameEmailInput:first-of-type {
+    margin-bottom: 10px;
+  }
+}
+
 .subjectInput {
   margin-bottom: 10px;
   width: 100%;
@@ -78,7 +111,7 @@
   padding: 20px;
 }
 .buttonWrap {
-  margin-top: 10px;
+  margin-top: 25px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -86,6 +119,45 @@
 
 .formButton {
   padding: 15px 30px;
-  background: #358342;
-  border: 0;
+  width: 155px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  position: relative;
+  border: 1px solid #7f0931;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.formButton::before {
+  content: '';
+  background: #7f0931;
+  position: absolute;
+  height: 0%;
+  top: 50%;
+  right: 0;
+  width: 100%;
+  transition: 0.2s ease;
+  z-index: -1;
+}
+
+.formButton:hover:before {
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+.successMessage {
+  margin-left: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .successMessage {
+    margin-left: 0;
+    margin-top: 30px;
+  }
 }
