@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import styles from './HomePage.module.css';
 
 import { technologiesData } from '../TechnologiesPage/technologiesData';
+import { socialsData } from './homePageData';
 
 const helloArray = ['H', 'e', 'l', 'l', 'o', ','];
 
@@ -103,9 +104,17 @@ const HomePage = () => {
             </motion.li>
           </ul>
           <ul className={styles.externalList}>
-            <li className={styles.externalElement}>GitHub</li>
-            <li className={styles.externalElement}>Linkedin</li>
-            <li className={styles.externalElement}>CV</li>
+            {socialsData.map((social, i) => (
+              <li key={i} id={social.iconName}>
+                <a
+                  className='social-btn flex-center'
+                  href={social.urlAddress}
+                  target='_blank'>
+                  {social.icon}
+                  <span className='social-text'>{social.text}</span>
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>
