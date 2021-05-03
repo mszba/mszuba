@@ -20,7 +20,7 @@
 }
 
 .main {
-  padding-top: 140px;
+  padding-top: 80px;
   max-width: 900px;
   position: relative;
   display: flex;
@@ -60,6 +60,8 @@
 }
 
 .projectLinks {
+  display: flex;
+  list-style: none;
 }
 
 .projectlink {
@@ -74,13 +76,33 @@
 }
 
 .projectImg {
-  width: 350px;
-  height: 350px;
+  width: 500px;
+  height: 280px;
   background: #fff;
 }
 
 @media screen and (max-width: 970px) {
   .projectElement {
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+
+  .projectTextWrap {
+    margin-right: 0;
+  }
+
+  .projectImgWrap {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .projectImgWrapReverse {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .projectImg {
+    width: 100%;
   }
 }

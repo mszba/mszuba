@@ -43,3 +43,18 @@
   word-spacing: 2px;
   line-height: 35px;
 }
+
+@media screen and (max-width: 768px) {
+  .subTitleContent {
+    flex-direction: column;
+  }
+
+  .pictureWrap {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .subtitle {
+    text-align: center;
+  }
+}
