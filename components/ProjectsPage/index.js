@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import SubpageLayout from '../../layouts/SubpageLayout';
+import { ImGithub, ImLink } from 'react-icons/im';
 import styles from './ProjectsPage.module.css';
 
 const ProjectsPage = () => {
@@ -30,14 +31,26 @@ const ProjectsPage = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
               tempore. Lorem ipsum dolor sit.
             </p>
-            <div className={styles.projectLinks}>
-              <a href='#' className={styles.projectlink}>
-                GitHub
-              </a>
-              <a href='#' className={styles.projectlink}>
-                Link
-              </a>
-            </div>
+            <ul className={styles.projectLinks}>
+              <li id='github'>
+                <a
+                  className='social-btn flex-center social-btn-margin'
+                  href='github.com'
+                  target='_blank'>
+                  <ImGithub />
+                  <span className='social-text'>github</span>
+                </a>
+              </li>
+              <li id='link'>
+                <a
+                  className='social-btn flex-center '
+                  href='github.com'
+                  target='_blank'>
+                  <ImLink />
+                  <span className='social-text'>link</span>
+                </a>
+              </li>
+            </ul>
           </div>
           <div className={styles.projectImgWrap}>
             <div className={styles.projectImg}></div>
@@ -57,14 +70,26 @@ const ProjectsPage = () => {
               adipisci ullam! Quibusdam. Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Dolores tempore. Lorem ipsum dolor sit.
             </p>
-            <div className={styles.projectLinks}>
-              <a href='#' className={styles.projectlink}>
-                GitHub
-              </a>
-              <a href='#' className={styles.projectlink}>
-                Link
-              </a>
-            </div>
+            <ul className={styles.projectLinks}>
+              <li id='github'>
+                <a
+                  className='social-btn flex-center social-btn-margin'
+                  href='github.com'
+                  target='_blank'>
+                  <ImGithub />
+                  <span className='social-text'>github</span>
+                </a>
+              </li>
+              <li id='link'>
+                <a
+                  className='social-btn flex-center '
+                  href='github.com'
+                  target='_blank'>
+                  <ImLink />
+                  <span className='social-text'>link</span>
+                </a>
+              </li>
+            </ul>
           </div>
           <div
             className={`${styles.projectImgWrap} ${styles.projectImgWrapReverse}`}>
@@ -83,14 +108,26 @@ const ProjectsPage = () => {
               adipisci ullam! Quibusdam. Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Dolores tempore. Lorem ipsum dolor sit.
             </p>
-            <div className={styles.projectLinks}>
-              <a href='#' className={styles.projectlink}>
-                GitHub
-              </a>
-              <a href='#' className={styles.projectlink}>
-                Link
-              </a>
-            </div>
+            <ul className={styles.projectLinks}>
+              <li id='github'>
+                <a
+                  className='social-btn flex-center social-btn-margin'
+                  href='github.com'
+                  target='_blank'>
+                  <ImGithub />
+                  <span className='social-text'>github</span>
+                </a>
+              </li>
+              <li id='link'>
+                <a
+                  className='social-btn flex-center '
+                  href='github.com'
+                  target='_blank'>
+                  <ImLink />
+                  <span className='social-text'>link</span>
+                </a>
+              </li>
+            </ul>
           </div>
           <div className={styles.projectImgWrap}>
             <div className={styles.projectImg}></div>
