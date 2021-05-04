@@ -10,9 +10,18 @@
   position: absolute;
   left: 4vw;
   top: 2vw;
+
   border: 0;
   background: transparent;
   font-size: 3rem;
+}
+
+@media screen and (max-width: 480px) {
+  .backButton {
+    left: 20px;
+    top: 30px;
+    font-size: 1rem;
+  }
 }
 
 .wrapper {
