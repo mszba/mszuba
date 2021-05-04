@@ -1,4 +1,5 @@
-import { ImGithub, ImLinkedin, ImDownload } from 'react-icons/im';
+import { ImGithub, ImLinkedin } from 'react-icons/im';
+import { BiDownload } from 'react-icons/bi';
 
 export const socialsData = [
   {
@@ -14,9 +15,9 @@ export const socialsData = [
     urlAddress: 'https://www.linkedin.com/in/marekszuba/',
   },
   {
-    icon: <ImDownload />,
+    icon: <BiDownload />,
     iconName: 'downloadIcon',
-    text: 'download my CV',
+    text: 'CV',
     urlAddress:
       'https://drive.google.com/uc?export=download&id=17T5JtMAslVqZFUIiskoK1cqbxUcqvHeZ',
   },
