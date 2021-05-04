@@ -14,7 +14,7 @@ const AboutMePage = () => {
             className={styles.pictureWrap}
             layoutId='picture'></motion.div>
           <h2 className={styles.subtitle}>
-            I'm Jeff, <br /> Frontend Developer
+            I'm Mark, <br /> Frontend Developer
           </h2>
         </div>
       </header>

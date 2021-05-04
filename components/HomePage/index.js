@@ -49,22 +49,22 @@ const HomePage = () => {
             <motion.span
               whileHover={{ scale: 1.2 }}
               className={styles.singleLetter}>
-              J
+              M
             </motion.span>
             <motion.span
               whileHover={{ scale: 1.2 }}
               className={styles.singleLetter}>
-              e
+              a
             </motion.span>
             <motion.span
               whileHover={{ scale: 1.2 }}
               className={styles.singleLetter}>
-              f
+              r
             </motion.span>
             <motion.span
               whileHover={{ scale: 1.2 }}
               className={styles.singleLetter}>
-              f
+              k
             </motion.span>
             <motion.span
               whileHover={{ scale: 1.2 }}
@@ -82,24 +82,24 @@ const HomePage = () => {
           <ul className={styles.list}>
             <motion.li className={styles.listElement} layoutId='aboutmeTitle'>
               <Link href='/aboutme'>
-                <a>About me</a>
+                <a>about me</a>
               </Link>
             </motion.li>
             <motion.li
               className={styles.listElement}
               layoutId='technologiesTitle'>
               <Link href='/technologies'>
-                <a>Technologies</a>
+                <a>technologies</a>
               </Link>
             </motion.li>
             <motion.li className={styles.listElement} layoutId='projectsTitle'>
               <Link href='/my-projects'>
-                <a>My projects</a>
+                <a>my projects</a>
               </Link>
             </motion.li>
             <motion.li className={styles.listElement} layoutId='contactTitle'>
               <Link href='/contact-me'>
-                <a>Contact me</a>
+                <a>contact me</a>
               </Link>
             </motion.li>
           </ul>
