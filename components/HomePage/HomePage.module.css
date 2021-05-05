@@ -33,20 +33,6 @@
   flex-direction: column;
 }
 
-@media screen and (max-width: 768px) {
-  .wrapper {
-    flex-direction: column;
-  }
-  .title {
-    font-size: 4.5rem;
-    margin: 20px 0 80px 0;
-    text-align: center;
-  }
-  .frontendText {
-    justify-content: center;
-  }
-}
-
 .list {
   max-width: 500px;
   margin-bottom: 30px;
@@ -186,6 +172,30 @@
   bottom: 78%;
   left: 75%;
 }
+.element15 {
+  bottom: 10%;
+  left: 85%;
+}
+.element16 {
+  bottom: 50%;
+  left: 60%;
+}
+.element17 {
+  bottom: 30%;
+  left: 50%;
+}
+.element18 {
+  bottom: 40%;
+  left: 60%;
+}
+.element19 {
+  bottom: 30%;
+  left: 90%;
+}
+.element20 {
+  bottom: 40%;
+  left: 39%;
+}
 
 @keyframes shine {
   from {
@@ -194,5 +204,34 @@
 
   to {
     mask-position: -50%;
+  }
+}
+
+@media screen and (max-width: 935px) {
+  .title {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .title {
+    margin: 20px 0 80px 0;
+    text-align: center;
+  }
+  .frontendText {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 3.5rem;
+  }
+  .pictureDot {
+    width: 15px;
+    height: 15px;
   }
 }
