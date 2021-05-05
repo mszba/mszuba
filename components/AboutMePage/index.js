@@ -10,23 +10,53 @@ const AboutMePage = () => {
           About me
         </motion.h1>
         <div className={styles.subTitleContent}>
-          <motion.div
-            className={styles.pictureWrap}
-            layoutId='picture'></motion.div>
-          <h2 className={styles.subtitle}>
+          <motion.div className={styles.pictureWrap} layoutId='picture'>
+            <img
+              src='/profile_pic.jpg'
+              alt='profile picture'
+              className={styles.profilePic}
+            />
+          </motion.div>
+          <motion.h2
+            className={styles.subtitle}
+            initial='out'
+            animate='in'
+            variants={{
+              in: {
+                opacity: 1,
+                x: 0,
+              },
+              out: { opacity: 0, x: 60 },
+            }}
+            transition={{
+              duration: 0.8,
+              delay: 0.4,
+              ease: [0.165, 0.84, 0.44, 1],
+            }}>
             I'm Mark, <br /> Frontend Developer
-          </h2>
+          </motion.h2>
         </div>
       </header>
       <main className={styles.main}>
-        <p className={styles.text}>
+        <motion.p
+          className={styles.text}
+          initial={{ opacity: 0, y: 60 }}
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 0.6,
+            delay: 0.6,
+            ease: [0.165, 0.84, 0.44, 1],
+          }}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum
           illo similique consequuntur. Beatae a aperiam voluptatibus incidunt
           quod illum dolores? Aliquid eum sed vitae sapiente, odio illo vel
           fugiat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
           soluta illum nemo ea animi saepe ipsum dignissimos ab velit quia sed
           accusamus magnam voluptates, ex minus quo, maiores ullam nesciunt.
-        </p>
+        </motion.p>
       </main>
     </SubpageLayout>
   );
