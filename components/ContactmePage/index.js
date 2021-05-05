@@ -51,13 +51,35 @@ const ContactmePage = () => {
         <motion.h1 className={styles.title} layoutId='contactTitle'>
           Contact me
         </motion.h1>
-        <h2 className={styles.subTitleText}>
+        <motion.h2
+          className={styles.subTitleText}
+          initial={{ opacity: 0, y: 60 }}
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 0.6,
+            delay: 0.4,
+            ease: [0.165, 0.84, 0.44, 1],
+          }}>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
           obcaecati autem consequuntur odit nostrum nemo quo at libero.
-        </h2>
+        </motion.h2>
       </header>
       <main className={styles.main}>
-        <form className={styles.form} onSubmit={onSubmit}>
+        <motion.form
+          className={styles.form}
+          onSubmit={onSubmit}
+          initial={{ opacity: 0, y: 60 }}
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 0.5,
+            delay: 0.6,
+          }}>
           {isSubmitted ? (
             <div className='success-animation'>
               <svg
@@ -77,9 +99,20 @@ const ContactmePage = () => {
                   d='M14.1 27.2l7.1 7.2 16.7-16.8'
                 />
               </svg>
-              <p className={styles.successMessage}>
+              <motion.p
+                className={styles.successMessage}
+                initial={{ opacity: 0, x: 40 }}
+                animate={{
+                  opacity: 1,
+                  x: 0,
+                }}
+                transition={{
+                  duration: 0.6,
+                  delay: 0.3,
+                  ease: [0.165, 0.84, 0.44, 1],
+                }}>
                 Thank you for getting in touch! I will get back to you soon!
-              </p>
+              </motion.p>
             </div>
           ) : (
             <>
@@ -143,7 +176,7 @@ const ContactmePage = () => {
               </div>{' '}
             </>
           )}
-        </form>
+        </motion.form>
       </main>
     </SubpageLayout>
   );
