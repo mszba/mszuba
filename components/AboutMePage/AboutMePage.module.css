@@ -27,6 +27,7 @@
   margin-right: 30px;
   width: 200px;
   height: 200px;
+  border-radius: 50%;
   background: #000;
 }
 
@@ -43,11 +44,10 @@
 }
 
 .text {
-  color: #fff;
   text-align: center;
-  font-size: 25px;
-  word-spacing: 2px;
+  font-size: 20px;
   line-height: 35px;
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {
