@@ -10,12 +10,6 @@ import { socialAnimations, textAnimations } from './animations';
 const helloArray = ['H', 'e', 'l', 'l', 'o', ','];
 
 const HomePage = () => {
-  function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min;
-  }
-
   return (
     <div className={styles.container}>
       {technologiesData.map((technology, i) => (
@@ -187,7 +181,7 @@ const HomePage = () => {
               className={styles.listElement}
               layoutId='technologiesTitle'>
               <Link href='/technologies'>
-                <a>technologies</a>
+                <a>my skills</a>
               </Link>
             </motion.li>
             <motion.li className={styles.listElement} layoutId='projectsTitle'>
