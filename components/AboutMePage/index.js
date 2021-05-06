@@ -50,12 +50,16 @@ const AboutMePage = () => {
             delay: 0.6,
             ease: [0.165, 0.84, 0.44, 1],
           }}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum
-          illo similique consequuntur. Beatae a aperiam voluptatibus incidunt
-          quod illum dolores? Aliquid eum sed vitae sapiente, odio illo vel
-          fugiat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
-          soluta illum nemo ea animi saepe ipsum dignissimos ab velit quia sed
-          accusamus magnam voluptates, ex minus quo, maiores ullam nesciunt.
+          I am logistics graduate that found passion to IT industry in the last
+          year of college writing a thesis on IoT solutions in logistics using
+          web technologies. So far, as a freelance, I have created three
+          projects using the latest web technologies that you can check{' '}
+          <a style={{ color: 'rgb(142, 141, 146)' }} href='/my-projects'>
+            here
+          </a>
+          . <br /> I am looking for an opportunity to contribute my skills and
+          knowledge at the right place and enhance my skills for further growth
+          and betterment.
         </motion.p>
       </main>
     </SubpageLayout>
