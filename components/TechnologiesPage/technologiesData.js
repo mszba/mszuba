@@ -51,21 +51,22 @@ export const technologiesData = [
     src: 'https://i0.wp.com/restfulapi.net/wp-content/uploads/rest.png?ssl=1',
   },
   {
-    layoutId: 'Postman',
-    className: styles.element10,
-    src: 'https://iconape.com/wp-content/png_logo_vector/postman.png',
-  },
-  {
     layoutId: 'JSON',
-    className: styles.element11,
+    className: styles.element10,
     src:
       'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/JSON_vector_logo.svg/160px-JSON_vector_logo.svg.png',
   },
   {
     layoutId: 'RWD',
-    className: styles.element12,
+    className: styles.element11,
     src:
       'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Responsive_Web_Design_Logo.svg/512px-Responsive_Web_Design_Logo.svg.png',
+  },
+  {
+    layoutId: 'SASS',
+    className: styles.element12,
+    src:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/512px-Sass_Logo_Color.svg.png',
   },
   {
     layoutId: 'styled-components',

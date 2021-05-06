@@ -9,7 +9,7 @@ const TechnologiesPage = () => {
     <SubpageLayout>
       <header className={styles.header}>
         <motion.h1 className={styles.title} layoutId='technologiesTitle'>
-          Technologies
+          My skills
         </motion.h1>
         <motion.h2
           className={styles.subTitleText}
@@ -23,8 +23,8 @@ const TechnologiesPage = () => {
             delay: 0.4,
             ease: [0.165, 0.84, 0.44, 1],
           }}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
-          obcaecati autem consequuntur odit nostrum nemo quo at libero.
+          I mainly use frontend technologies but I am also interested in backend
+          part of a web development.
         </motion.h2>
       </header>
       <main className={styles.main}>
@@ -33,7 +33,8 @@ const TechnologiesPage = () => {
             key={i}
             layoutId={technology.layoutId}
             className={styles.element}>
-            <img
+            <motion.img
+              whileHover={{ scale: 1.15 }}
               className={styles.elementImg}
               src={technology.src}
               alt={technology.layoutId}
