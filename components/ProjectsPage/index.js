@@ -23,8 +23,9 @@ const ProjectsPage = () => {
             delay: 0.4,
             ease: [0.165, 0.84, 0.44, 1],
           }}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
-          obcaecati autem consequuntur odit nostrum nemo quo at libero.
+          So far I have created three, real world projects such as API-connected
+          web application, CRUD fullstack web application and Single Page
+          Application.
         </motion.h2>
       </header>
       <main className={styles.main}>
@@ -32,18 +33,16 @@ const ProjectsPage = () => {
           <div className={styles.projectTextWrap}>
             <Fade triggerOnce cascade delay={800}>
               <h3 className={styles.projectTitle}>
-                Senter Web App - dolor sit amet consectetur adipisicing elit
+                Senter - Web application to streamline and automate the
+                development of SEO for websites and articles.
               </h3>
 
               <p className={styles.projectText}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequatur quas magnam eaque consequuntur iure doloribus a
-                totam adipisci ullam! Quibusdam. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Dolores tempore. Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Consequatur quas magnam
-                eaque consequuntur iure doloribus a totam adipisci ullam!
-                Quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Dolores tempore. Lorem ipsum dolor sit.
+                The project is divided into six main modules: Website analysis,
+                Keyword planner, Audit, Content analysis, Keyword analysis,
+                Website info. <br /> My role was to create frontend with React
+                and connect it to API based on Python. Project was created with
+                collaboration with backend developer.
               </p>
             </Fade>
             <ul className={styles.projectLinks}>
@@ -51,7 +50,7 @@ const ProjectsPage = () => {
                 <li id='github'>
                   <a
                     className='social-btn flex-center social-btn-margin'
-                    href='github.com'
+                    href='https://github.com/gpiechnik2/senter'
                     target='_blank'>
                     <ImGithub />
                     <span className='social-text'>github</span>
@@ -60,10 +59,10 @@ const ProjectsPage = () => {
                 <li id='link'>
                   <a
                     className='social-btn flex-center '
-                    href='github.com'
+                    href='https://github.com/gpiechnik2/senter'
                     target='_blank'>
                     <ImLink />
-                    <span className='social-text'>link</span>
+                    <span className='social-text'>direct link</span>
                   </a>
                 </li>
               </Fade>
@@ -71,7 +70,7 @@ const ProjectsPage = () => {
           </div>
           <Fade triggerOnce delay={800}>
             <div className={styles.projectImgWrap}>
-              <div className={styles.projectImg}></div>
+              <img src='project_1.png' className={styles.projectImg} />
             </div>
           </Fade>
         </article>
@@ -82,14 +81,14 @@ const ProjectsPage = () => {
             className={`${styles.projectTextWrap} ${styles.projectTextWrapReverse}`}>
             <Fade triggerOnce delay={600} cascade>
               <h3 className={styles.projectTitle}>
-                School Web App - dolor sit amet consectetur adipisicing elit
+                School Web App - Fullstack application with administrator panel
+                (custom CMS).
               </h3>
               <p className={styles.projectText}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequatur quas magnam eaque consequuntur iure doloribus a
-                totam adipisci ullam! Quibusdam. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Dolores tempore. Lorem ipsum dolor
-                sit.
+                This project is a web application made for school with
+                customized Content Management System. Application is divided
+                into two parts: read-only user part and administrator panel.
+                <br />
               </p>
             </Fade>
             <ul className={styles.projectLinks}>
@@ -97,7 +96,7 @@ const ProjectsPage = () => {
                 <li id='github'>
                   <a
                     className='social-btn flex-center social-btn-margin'
-                    href='github.com'
+                    href='https://github.com/mszba/school-web-app'
                     target='_blank'>
                     <ImGithub />
                     <span className='social-text'>github</span>
@@ -106,10 +105,10 @@ const ProjectsPage = () => {
                 <li id='link'>
                   <a
                     className='social-btn flex-center '
-                    href='github.com'
+                    href='https://school-web-app.vercel.app/'
                     target='_blank'>
                     <ImLink />
-                    <span className='social-text'>link</span>
+                    <span className='social-text'>direct link</span>
                   </a>
                 </li>
               </Fade>
