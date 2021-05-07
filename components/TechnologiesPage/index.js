@@ -24,7 +24,7 @@ const TechnologiesPage = () => {
             ease: [0.165, 0.84, 0.44, 1],
           }}>
           I mainly use frontend technologies but I am also interested in backend
-          part of a web development.
+          part of the web development.
         </motion.h2>
       </header>
       <main className={styles.main}>

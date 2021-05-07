@@ -85,10 +85,11 @@ const ProjectsPage = () => {
                 (custom CMS).
               </h3>
               <p className={styles.projectText}>
-                This project is a web application made for school with
-                customized Content Management System. Application is divided
-                into two parts: read-only user part and administrator panel.
+                This project is a web application with customized Content
+                Management System made for a school. Application is divided into
+                two parts: read-only user part and administrator panel.
                 <br />
+                Project was fully created by me, including design.
               </p>
             </Fade>
             <ul className={styles.projectLinks}>
@@ -126,15 +127,13 @@ const ProjectsPage = () => {
           <div className={styles.projectTextWrap}>
             <Fade triggerOnce delay={600} cascade>
               <h3 className={styles.projectTitle}>
-                School Web App - dolor sit amet consectetur adipisicing elit
+                Miodowa-polana - Single Page Application.
               </h3>
 
               <p className={styles.projectText}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequatur quas magnam eaque consequuntur iure doloribus a
-                totam adipisci ullam! Quibusdam. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Dolores tempore. Lorem ipsum dolor
-                sit.
+                This project is a website of a small hotel. Created mainly with
+                React and styled-components. <br />
+                Project was fully created by me excluding logo.
               </p>
             </Fade>
             <ul className={styles.projectLinks}>
@@ -142,7 +141,7 @@ const ProjectsPage = () => {
                 <li id='github'>
                   <a
                     className='social-btn flex-center social-btn-margin'
-                    href='github.com'
+                    href='https://github.com/mszba/miodowa-polana-website'
                     target='_blank'>
                     <ImGithub />
                     <span className='social-text'>github</span>
@@ -151,10 +150,10 @@ const ProjectsPage = () => {
                 <li id='link'>
                   <a
                     className='social-btn flex-center '
-                    href='github.com'
+                    href='https://miodowa-polana.pl/'
                     target='_blank'>
                     <ImLink />
-                    <span className='social-text'>link</span>
+                    <span className='social-text'>direct link</span>
                   </a>
                 </li>
               </Fade>
