@@ -49,7 +49,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div ref={vantaRef} className='vanta-container'>
-      <AnimateSharedLayout>
+      <AnimateSharedLayout type='crossfade'>
         <Component {...pageProps} />
       </AnimateSharedLayout>
     </div>
