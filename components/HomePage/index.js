@@ -7,8 +7,6 @@ import { technologiesData } from '../TechnologiesPage/technologiesData';
 import { socialsData } from './homePageData';
 import { socialAnimations, textAnimations } from './animations';
 
-const helloArray = ['H', 'e', 'l', 'l', 'o', ','];
-
 const HomePage = () => {
   return (
     <div className={styles.container}>
@@ -174,24 +172,24 @@ const HomePage = () => {
           <motion.ul className={styles.list}>
             <motion.li className={styles.listElement} layoutId='aboutmeTitle'>
               <Link href='/aboutme'>
-                <a>about me</a>
+                <a className={styles.effectUnderline}>about me</a>
               </Link>
             </motion.li>
             <motion.li
               className={styles.listElement}
               layoutId='technologiesTitle'>
               <Link href='/technologies'>
-                <a>my skills</a>
+                <a className={styles.effectUnderline}>my skills</a>
               </Link>
             </motion.li>
             <motion.li className={styles.listElement} layoutId='projectsTitle'>
               <Link href='/my-projects'>
-                <a>my projects</a>
+                <a className={styles.effectUnderline}>my projects</a>
               </Link>
             </motion.li>
             <motion.li className={styles.listElement} layoutId='contactTitle'>
               <Link href='/contact-me'>
-                <a>contact me</a>
+                <a className={styles.effectUnderline}>contact me</a>
               </Link>
             </motion.li>
           </motion.ul>
