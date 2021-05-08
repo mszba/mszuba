@@ -263,3 +263,9 @@ select:-webkit-autofill:focus {
 #link svg {
   fill: #333;
 }
+
+@media screen and (max-width: 768px) {
+  .vanta-container::after {
+    background: transparent;
+  }
+}
