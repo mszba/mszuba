@@ -48,14 +48,6 @@
 .listElement {
   margin-bottom: 5px;
   font-size: 25px;
-  /* font-weight: bold; */
-  /* color: rgb(142, 141, 146); */
-}
-
-.listElement:hover {
-  color: rgb(142, 141, 146);
-  transform: translateX(10px);
-  transition: transform 0.3s ease, color 0.4s ease;
 }
 
 .externalList {
@@ -84,7 +76,6 @@
 }
 
 .frontendText {
-  /* color: rgba(113,111,119); */
   color: rgb(142, 141, 146);
 }
 
@@ -103,6 +94,34 @@
 .frontendText {
   display: flex;
   font-size: 2rem;
+}
+
+/*effect underline*/
+.effectUnderline {
+  position: relative;
+}
+
+.effectUnderline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+  color: rgb(142, 141, 146);
+}
+
+.effectUnderline:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 
 .element {
