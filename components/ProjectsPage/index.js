@@ -71,7 +71,7 @@ const ProjectsPage = () => {
           <Fade triggerOnce delay={800}>
             <div className={styles.projectImgWrap}>
               <img
-                src='project_1.png'
+                src='project_1e.png'
                 alt='senter-app'
                 className={styles.projectImg}
               />

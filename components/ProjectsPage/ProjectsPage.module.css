@@ -80,6 +80,7 @@
   width: 500px;
   height: 235px;
   background: #fff;
+  color: #000;
 }
 
 @media screen and (max-width: 970px) {
