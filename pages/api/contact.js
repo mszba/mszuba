@@ -22,9 +22,12 @@ export default function (req, res) {
   };
 
   transporter.sendMail(mailData, function (err, info) {
-    if (err) console.log(err);
-    else console.log(info);
+    if (err) {
+      console.log(err);
+      res.send('error' + JSON.stringify(err));
+    } else {
+      console.log('mail sent');
+      res.send('success');
+    }
   });
-
-  res.send('success');
 }
