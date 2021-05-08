@@ -19,30 +19,28 @@ const ContactmePage = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-
-    fetch('/api/contact', {
+    const response = await fetch('/api/contact', {
       method: 'POST',
       headers: {
         Accept: 'application/json, text/plain, */*',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ formData }),
-    }).then((res) => {
-      setIsLoading(false);
-      if (res.status === 200) {
-        setIsSubmitted(true);
-        setFormData({
-          ...formData,
-          name: '',
-          email: '',
-          subject: '',
-          message: '',
-        });
-      }
+      body: JSON.stringify(formData),
     });
+    setIsLoading(false);
+    if (response.status === 200) {
+      setIsSubmitted(true);
+      setFormData({
+        ...formData,
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+      });
+    }
   };
 
   return (
