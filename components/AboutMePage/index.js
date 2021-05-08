@@ -52,7 +52,7 @@ const AboutMePage = () => {
           }}>
           I am logistics graduate that found passion to IT industry in the last
           year of college writing a thesis on IoT solutions in logistics using
-          web technologies. So far, as a freelance, I have created three
+          web technologies. <br /> So far, as a freelance, I have created three
           projects using the latest web technologies that you can check{' '}
           <a style={{ color: 'rgb(142, 141, 146)' }} href='/my-projects'>
             here

@@ -63,8 +63,9 @@ const ContactmePage = () => {
             delay: 0.4,
             ease: [0.165, 0.84, 0.44, 1],
           }}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
-          obcaecati autem consequuntur odit nostrum nemo quo at libero.
+          I'm seeking out job opportunity to put my skills to use and enhance my
+          knowledge and experience in the IT industry. If you’d like to get in
+          touch, please fill in the form below.
         </motion.h2>
       </header>
       <main className={styles.main}>

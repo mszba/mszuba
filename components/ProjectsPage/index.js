@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import SubpageLayout from '../../layouts/SubpageLayout';
-import { Fade, Slide, Zoom } from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 import { ImGithub, ImLink } from 'react-icons/im';
 import styles from './ProjectsPage.module.css';
 
@@ -70,7 +70,11 @@ const ProjectsPage = () => {
           </div>
           <Fade triggerOnce delay={800}>
             <div className={styles.projectImgWrap}>
-              <img src='project_1.png' className={styles.projectImg} />
+              <img
+                src='project_1.png'
+                alt='senter-app'
+                className={styles.projectImg}
+              />
             </div>
           </Fade>
         </article>
@@ -118,7 +122,11 @@ const ProjectsPage = () => {
           <Fade triggerOnce delay={800}>
             <div
               className={`${styles.projectImgWrap} ${styles.projectImgWrapReverse}`}>
-              <div className={styles.projectImg}></div>
+              <img
+                src='project_2.png'
+                alt='school-app'
+                className={styles.projectImg}
+              />
             </div>
           </Fade>
         </article>
@@ -161,7 +169,11 @@ const ProjectsPage = () => {
           </div>
           <Fade triggerOnce delay={800}>
             <div className={styles.projectImgWrap}>
-              <div className={styles.projectImg}></div>
+              <img
+                src='project_3.png'
+                alt='miodowa-polana'
+                className={styles.projectImg}
+              />
             </div>
           </Fade>
         </article>
