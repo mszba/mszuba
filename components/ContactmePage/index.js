@@ -29,7 +29,7 @@ const ContactmePage = () => {
         Accept: 'application/json, text/plain, */*',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(formData),
+      body: JSON.stringify({ formData }),
     }).then((res) => {
       setIsLoading(false);
       if (res.status === 200) {
