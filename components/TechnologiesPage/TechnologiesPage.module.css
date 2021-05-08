@@ -28,10 +28,9 @@
   position: relative;
 
   display: grid;
-  align-items: center;
+  align-items: baseline;
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 30px 30px;
 }
 
@@ -58,13 +57,11 @@
 @media screen and (max-width: 768px) {
   .main {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
 
 @media screen and (max-width: 480px) {
   .main {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
