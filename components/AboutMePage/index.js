@@ -54,7 +54,7 @@ const AboutMePage = () => {
           year of college writing a thesis on IoT solutions in logistics using
           web technologies. <br /> So far, as a freelance, I have created three
           projects using the latest web technologies that you can check{' '}
-          <a style={{ color: 'rgb(142, 141, 146)' }} href='/my-projects'>
+          <a style={{ color: '#7f0931' }} href='/my-projects'>
             here
           </a>
           . <br /> I am looking for an opportunity to contribute my skills and

@@ -20,8 +20,6 @@ function MyApp({ Component, pageProps }) {
 
           color: 0x7f0931,
           backgroundColor: 0x211e2a,
-          // color: 0x3fe8ff,
-          // backgroundColor: 0xf2a52,
           scale: 1,
           scaleMobile: 1,
         })
