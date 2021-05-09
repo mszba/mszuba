@@ -3,7 +3,7 @@ import DefaultLayout from '../layouts/DefaultLayout';
 
 const MyProjects = () => {
   return (
-    <DefaultLayout>
+    <DefaultLayout pageTitle='My projects'>
       <ProjectsPage />
     </DefaultLayout>
   );

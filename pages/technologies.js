@@ -3,7 +3,7 @@ import DefaultLayout from '../layouts/DefaultLayout';
 
 const Technologies = () => {
   return (
-    <DefaultLayout>
+    <DefaultLayout pageTitle='My skills'>
       <TechnologiesPage />
     </DefaultLayout>
   );

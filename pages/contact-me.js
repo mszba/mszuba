@@ -3,7 +3,7 @@ import DefaultLayout from '../layouts/DefaultLayout';
 
 const Contactme = () => {
   return (
-    <DefaultLayout>
+    <DefaultLayout pageTitle='Contact me'>
       <ContactmePage />
     </DefaultLayout>
   );
