@@ -13,12 +13,5 @@ export const socialsData = [
     iconName: 'linkedin',
     text: 'in/marekszuba',
     urlAddress: 'https://www.linkedin.com/in/marekszuba/',
-  },
-  {
-    icon: <BiDownload />,
-    iconName: 'downloadIcon',
-    text: 'CV',
-    urlAddress:
-      'https://drive.google.com/uc?export=download&id=17T5JtMAslVqZFUIiskoK1cqbxUcqvHeZ',
-  },
+  }
 ];

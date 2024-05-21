@@ -8,6 +8,12 @@ export const technologiesData = [
       'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png',
   },
   {
+    layoutId: 'TypeScript',
+    className: styles.element10,
+    src:
+      'https://cdn.iconscout.com/icon/free/png-256/free-typescript-3521774-2945272.png',
+  },
+  {
     layoutId: 'HTML5',
     className: styles.element2,
     src:
@@ -20,25 +26,25 @@ export const technologiesData = [
       'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Devicon-css3-plain.svg/1200px-Devicon-css3-plain.svg.png',
   },
   {
-    layoutId: 'React',
+    layoutId: 'Vue.js',
     className: styles.element4,
+    src: 'https://cdn.iconscout.com/icon/free/png-256/free-vuejs-1175052.png?f=webp',
+  },
+  {
+    layoutId: 'React',
+    className: styles.element5,
     src: 'https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg',
   },
   {
     layoutId: 'Next.js',
-    className: styles.element5,
+    className: styles.element6,
     src:
       'https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png',
   },
   {
     layoutId: 'Redux',
-    className: styles.element6,
-    src: 'https://cdn.iconscout.com/icon/free/png-512/redux-283024.png',
-  },
-  {
-    layoutId: 'npm',
     className: styles.element7,
-    src: 'https://cdn.freebiesupply.com/logos/thumbs/2x/npm-logo.png',
+    src: 'https://cdn.iconscout.com/icon/free/png-512/redux-283024.png',
   },
   {
     layoutId: 'axios',
@@ -49,12 +55,6 @@ export const technologiesData = [
     layoutId: 'REST API',
     className: styles.element9,
     src: 'https://i0.wp.com/restfulapi.net/wp-content/uploads/rest.png?ssl=1',
-  },
-  {
-    layoutId: 'JSON',
-    className: styles.element10,
-    src:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/JSON_vector_logo.svg/160px-JSON_vector_logo.svg.png',
   },
   {
     layoutId: 'RWD',

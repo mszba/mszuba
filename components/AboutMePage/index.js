@@ -50,16 +50,7 @@ const AboutMePage = () => {
             delay: 0.6,
             ease: [0.165, 0.84, 0.44, 1],
           }}>
-          I am logistics graduate that found passion to IT industry in the last
-          year of college writing a thesis on IoT solutions in logistics using
-          web technologies. <br /> So far, as a freelance, I have created three
-          projects using the latest web technologies that you can check{' '}
-          <a style={{ color: '#7f0931' }} href='/my-projects'>
-            here
-          </a>
-          . <br /> I am looking for an opportunity to contribute my skills and
-          knowledge at the right place and enhance my skills for further growth
-          and betterment.
+            Hardworking Frontend Developer with 3 years of experience. I specialize in JavaScript, TypeScript, CSS and Vue. Working in various teams, I have successfully completed projects for clients in many industries. My skills include problem-solving ability, creativity, attention to detail and the ability to quickly adapt to new technologies. I am currently looking for new challenges and growth opportunities.
         </motion.p>
       </main>
     </SubpageLayout>
