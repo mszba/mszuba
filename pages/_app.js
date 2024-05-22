@@ -3,6 +3,7 @@ import { AnimateSharedLayout } from 'framer-motion';
 import NET from 'vanta/dist/vanta.net.min';
 import * as THREE from 'three';
 import '../styles/globals.css';
+import { Analytics } from '@vercel/analytics/react';
 
 function MyApp({ Component, pageProps }) {
   const [vantaEffect, setVantaEffect] = useState(0);
@@ -50,6 +51,7 @@ function MyApp({ Component, pageProps }) {
       <AnimateSharedLayout type='crossfade'>
         <Component {...pageProps} />
       </AnimateSharedLayout>
+      <Analytics />
     </div>
   );
 }
