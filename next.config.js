@@ -1,5 +1,7 @@
 module.exports = {
   env: {
-    password: process.env.password,
+    SMTP_PASSWORD: process.env.SMTP_PASSWORD,
+    SMTP_EMAIL: process.env.SMTP_EMAIL,
+    RECEIVER_EMAIL: process.env.RECEIVER_EMAIL,
   },
 };
