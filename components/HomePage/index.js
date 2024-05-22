@@ -171,25 +171,25 @@ const HomePage = () => {
         <nav className={styles.nav}>
           <motion.ul className={styles.list}>
             <motion.li className={styles.listElement} layoutId='aboutmeTitle'>
-              <Link href='/aboutme'>
-                <a className={styles.effectUnderline}>about me</a>
+              <Link href='/aboutme'  className={styles.effectUnderline}>
+                about me
               </Link>
             </motion.li>
             <motion.li
               className={styles.listElement}
               layoutId='technologiesTitle'>
-              <Link href='/technologies'>
-                <a className={styles.effectUnderline}>my skills</a>
+              <Link href='/technologies' className={styles.effectUnderline}>
+                my skills
               </Link>
             </motion.li>
             <motion.li className={styles.listElement} layoutId='projectsTitle'>
-              <Link href='/my-projects'>
-                <a className={styles.effectUnderline}>my projects</a>
+              <Link href='/my-projects' className={styles.effectUnderline}>
+                my projects
               </Link>
             </motion.li>
             <motion.li className={styles.listElement} layoutId='contactTitle'>
-              <Link href='/contact-me'>
-                <a className={styles.effectUnderline}>contact me</a>
+              <Link href='/contact-me' className={styles.effectUnderline}>
+                contact me
               </Link>
             </motion.li>
           </motion.ul>

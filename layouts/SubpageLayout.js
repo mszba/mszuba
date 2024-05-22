@@ -5,8 +5,8 @@ const SubpageLayout = ({ children }) => {
   return (
     <div className={styles.container}>
       <button className={styles.backButton}>
-        <Link href='/'>
-          <a style={{ color: '#fff' }}>&#10229;</a>
+        <Link href='/' style={{ color: '#fff' }}>
+          &#10229;
         </Link>
       </button>
       <div className={styles.wrapper}>{children}</div>
